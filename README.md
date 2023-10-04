@@ -2,10 +2,21 @@
 
 This is the first task for T346641: Assist Capacity Exchange Development, aimed at getting you familiar with the basic structure of the development of the Capacity Exchange platform.  Objective of the task: Create a Django project with an app called bug and commit it in GitHub.
 
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Setup (Continuation) Second Task for T346641](#setup-continuation-second-task-for-t346641)
+- [Usage (Continuation) Second Task for T346641](#usage-continuation-second-task-for-t346641)
+
+
 ## Prerequisites
 
-- Python 3.x installed on your system.
-- Django 4.x 
+- A computer running either Windows, MacOS or Linux.
+- [Python 3.x](https://www.python.org/downloads/) installed on your system.
+- [Django 4.x](https://www.djangoproject.com/download/) installed on your system.
+- Basic knowledge of Python and Django.
+- A GitHub account and basic knowledge of Git.
 
 ## Setup
 
