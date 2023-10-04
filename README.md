@@ -38,3 +38,5 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
 
     ```bash
     python manage.py runserver
+
+* The project will open on your broswer on http://127.0.0.1:8000/
