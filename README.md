@@ -72,11 +72,11 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
     ```
 ## Usage (Continuation) Second Task for T346641
 
-Access the Django admin panel by navigating to http://127.0.0.1:8000/admin in your web browser.
+* Access the Django admin panel by navigating to http://127.0.0.1:8000/admin in your web browser.
 
-Log in with the superuser credentials you created earlier.
+* Log in with the superuser credentials you created earlier.
 Once logged in, you'll see the "Bugs" section listed on the admin dashboard.
 
-Click on "Bugs" to expand it, then click on "Add" to create a new bug.
+* Click on "Bugs" to expand it, then click on "Add" to create a new bug.
 
-Fill out the form with the bug's details, then click "Save" to register the new bug in the database.
+* Fill out the form with the bug's details, then click "Save" to register the new bug in the database.
