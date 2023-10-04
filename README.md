@@ -38,5 +38,45 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
 
     ```bash
     python manage.py runserver
+    ```
 
-* The project will open on your broswer on http://127.0.0.1:8000/
+* Open the project on your broswer on http://127.0.0.1:8000/
+
+## Setup (Continuation) Second Task for T346641
+1. Structuring the Database:
+
+* We have now created our models, we'll need to create a database schema.
+* This is done by running migrations which tells django how to store our data.
+
+* Run the following command to generate a migration file:
+
+    ```bash
+    python manage.py makemigrations
+    ```
+* Run the following command to apply the migration:
+
+    ```bash
+    python manage.py migrate
+    ```
+* Create a superuser for accessing the admin panel:
+
+    ```bash
+    python manage.py createsuperuser
+    ```
+* You will be prompted to enter a username, email address (optional), and a password. Remember these credentials as you'll use them to log into the admin panel.
+
+* Now, run the development server again (if it's not already running):
+
+    ```bash
+    python manage.py runserver
+    ```
+## Usage (Continuation) Second Task for T346641
+
+Access the Django admin panel by navigating to http://127.0.0.1:8000/admin in your web browser.
+
+Log in with the superuser credentials you created earlier.
+Once logged in, you'll see the "Bugs" section listed on the admin dashboard.
+
+Click on "Bugs" to expand it, then click on "Add" to create a new bug.
+
+Fill out the form with the bug's details, then click "Save" to register the new bug in the database.
