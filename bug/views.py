@@ -16,6 +16,7 @@ class BugCreateView(View):
             form.save()
             return redirect('bug_list')
         return render(request, self.template_name, {'form': form})
+    
 class BugDetailView(View):
     template_name = 'view_bug.html'
 
