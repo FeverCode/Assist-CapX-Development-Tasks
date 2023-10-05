@@ -8,6 +8,8 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
 - [Usage](#usage)
 - [Setup (Continuation) Second Task for T346641](#setup-continuation-second-task-for-t346641)
 - [Usage (Continuation) Second Task for T346641](#usage-continuation-second-task-for-t346641)
+- [Setup (Continuation) Third Task for T346641](#setup-continuation-third-task-for-t346641)
+- [Usage (Continuation) Third Task for T346641](#usage-continuation-third-task-for-t346641)
 
 
 ## Prerequisites
@@ -91,3 +93,24 @@ Once logged in, you'll see the "Bugs" section listed on the admin dashboard.
 * Click on "Bugs" to expand it, then click on "Add" to create a new bug.
 
 * Fill out the form with the bug's details, then click "Save" to register the new bug in the database.
+
+## Setup (Continuation) Third Task for T346641
+1. Creating Views and Templates:
+    * We have created views to register a new bug, view a specific bug, and list all registered bugs.
+    * Corresponding templates have been created to provide a user interface for these views.
+
+2. URL Configuration:
+    * URL patterns have been added to `urls.py` to map URLs to the new views.
+    
+3. Form for Bug Registration:
+    * A `forms.py` file has been created with a `BugForm` class to handle the form submission for bug registration.
+
+## Usage (Continuation) Third Task for T346641
+* To register a new bug, navigate to http://127.0.0.1:8000/ in your web browser.
+
+* Fill out the form with the bug's details, then click "Submit" to register the new bug.
+
+* To view the list of registered bugs, navigate to http://127.0.0.1:8000/bugs in your web browser.
+
+* Click on a bug to view its details.
+    To view the details of a specific bug, navigate to http://127.0.0.1:8000/bug/<bug_id> in your web browser, replacing <bug_id> with the ID of the bug you want to view.
