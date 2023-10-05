@@ -10,6 +10,9 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
 - [Usage (Continuation) Second Task for T346641](#usage-continuation-second-task-for-t346641)
 - [Setup (Continuation) Third Task for T346641](#setup-continuation-third-task-for-t346641)
 - [Usage (Continuation) Third Task for T346641](#usage-continuation-third-task-for-t346641)
+- [Running Automated Test Cases](#running-automated-test-cases)
+- [Contributing](#contributing)
+- [Licence](#license)
 
 
 ## Prerequisites
@@ -33,7 +36,7 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
     cd Assist-Capacity-Exchange-Development-Task-one
 
 3. Create and activate a virtual environment (venv) to 
-    isolate project dependecies:     
+    isolate project dependencies:     
     
     ```bash
     python -m venv venv
@@ -53,13 +56,13 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
     python manage.py runserver
     ```
 
-* Open the project on your broswer on http://127.0.0.1:8000/
+* Open the project on your browser at http://127.0.0.1:8000/
 
 ## Setup (Continuation) Second Task for T346641
 1. Structuring the Database:
 
 * We have now created our models, we'll need to create a database schema.
-* This is done by running migrations which tells django how to store our data.
+* This is done by running migrations which tell Django how to store our data.
 
 * Run the following command to generate a migration file:
 
@@ -76,7 +79,7 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
     ```bash
     python manage.py createsuperuser
     ```
-* You will be prompted to enter a username, email address (optional), and a password. Remember these credentials as you'll use them to log into the admin panel.
+* You will be prompted to enter a username, email address (optional), and password. Remember these credentials as you'll use them to log into the admin panel.
 
 * Now, run the development server again (if it's not already running):
 
@@ -114,3 +117,17 @@ Once logged in, you'll see the "Bugs" section listed on the admin dashboard.
 
 * Click on a bug to view its details.
     To view the details of a specific bug, navigate to http://127.0.0.1:8000/bug/<bug_id> in your web browser, replacing <bug_id> with the ID of the bug you want to view.
+
+## Running Automated Test Cases
+
+* To run the tests, execute the following command:
+    ```
+    python manage.py test bug
+    ```
+## Contributing
+
+* Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+* This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
