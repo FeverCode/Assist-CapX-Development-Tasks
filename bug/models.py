@@ -25,4 +25,6 @@ class Bug(models.Model):
         default='todo'
     )
     def __str__(self):
-        return f"{self.description} - reported on {self.report_date.strftime('%Y-%m-%d')}"
+        if self.report_date:
+            return f"{self.description} - reported on {self.report_date.strftime('%Y-%m-%d')}"
+        return self.description 
