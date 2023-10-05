@@ -28,12 +28,12 @@ This is the first task for T346641: Assist Capacity Exchange Development, aimed 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/FeverCode/Assist-Capacity-Exchange-Development-Task-one.git
+   git clone https://github.com/FeverCode/Assist-CapX-Development-Tasks.git
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Assist-Capacity-Exchange-Development-Task-one
+    cd Assist-CapX-Development-Tasks
 
 3. Create and activate a virtual environment (venv) to 
     isolate project dependencies:     
