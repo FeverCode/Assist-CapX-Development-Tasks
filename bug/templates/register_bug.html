@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Register Bug{% endblock %}
+
+{% block content %}
+<h1>Register Bug</h1>
+<form method="post" class="bug-form">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <button type="submit">Submit</button>
+</form>
+
+<a href="{% url 'bug_list' %}" class="bug-list-link">View Existing Bug List</a>
+
+<style>
+    .bug-form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .bug-form table {
+        width: 100%;
+    }
+    .bug-form table td {
+        padding: 8px;
+    }
+    .bug-form button {
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #008CBA;
+        color: white;
+        font-size: 16px;
+    }
+    .bug-list-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #008CBA;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ bug.description }}{% endblock %}
+
+{% block content %}
+<div class="bug-card">
+    <h1>{{ bug.description }}</h1>
+    <p><strong>Bug Type:</strong> {{ bug.bug_type }}</p>
+    <p><strong>Report Date:</strong> {{ bug.report_date|date:"F j, Y" }}</p>
+</div>
+
+<div class="bug-actions">
+    <a href="{% url 'home' %}" class="action-link">Register New Bug</a>
+    <a href="{% url 'bug_list' %}" class="action-link">View Bug List</a>
+</div>
+
+<style>
+    .bug-card {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        margin-bottom: 20px;  /* Added margin for spacing */
+    }
+    .bug-card h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .bug-card p {
+        margin: 5px 0;
+    }
+    .bug-actions {
+        text-align: center;
+        margin: auto;
+        max-width: 500px;
+    }
+    .action-link {
+        margin: 0 10px;
+        font-size: 18px;
+        color: #008CBA;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}

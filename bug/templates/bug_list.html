@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Bug List{% endblock %}
+
+{% block content %}
+    <h1>Bug List</h1>
+    <a href="{% url 'home' %}" class="register-link">Register New Bug</a>
+    <table border="1" style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Report Date</th>
+                <th>Bug Type</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bug in bugs %}
+                <tr>
+                    <td>{{ bug.description }}</td>
+                    <td>{{ bug.report_date|date:"Y-m-d" }}</td>
+                    <td>{{ bug.bug_type }}</td>
+                    <td><a href="{% url 'view_bug' bug.id %}">View Details</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <style>
+        .register-link {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #008CBA;
+            text-decoration: none;
+        }
+    </style>
+{% endblock %}
